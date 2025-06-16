@@ -19,6 +19,7 @@ starterProjects:
     git:
       remotes:
         origin: https://github.com/devfile-samples/python-django-ex
+    clonePath: .
 components:
   - name: py-web
     container:
