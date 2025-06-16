@@ -1,4 +1,4 @@
-schemaVersion: 2.1.0
+schemaVersion: 2.2.0
 metadata:
   name: python-django
   displayName: Django
@@ -14,12 +14,12 @@ metadata:
   language: Python
   provider: Red Hat
   version: 2.1.0
-starterProjects:
+projects:
   - name: django-example
-    git:
-      remotes:
-        origin: https://github.com/devfile-samples/python-django-ex
-    clonePath: .
+    source:
+      type: git
+      location: https://github.com/devfile-samples/python-django-ex.git
+    clonePath: .   
 components:
   - name: py-web
     container:
