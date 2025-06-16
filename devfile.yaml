@@ -16,9 +16,9 @@ metadata:
   version: 2.1.0
 projects:
   - name: django-example
-    source:
-      type: git
-      location: https://github.com/devfile-samples/python-django-ex.git
+    git:
+      remotes: 
+        origin: https://github.com/devfile-samples/python-django-ex.git
     clonePath: .   
 components:
   - name: py-web
