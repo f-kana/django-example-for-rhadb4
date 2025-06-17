@@ -1,3 +1,4 @@
+```yaml devfile.yaml
 schemaVersion: 2.2.0
 metadata:
   name: python-django
@@ -17,13 +18,14 @@ metadata:
 projects:
   - name: django-example
     git:
-      remotes: 
+      remotes:
         origin: https://github.com/devfile-samples/python-django-ex.git
-    # clonePath: .   
 components:
   - name: py-web
     container:
       image: registry.access.redhat.com/ubi9/python-39:1-1743091356
+      memoryRequest: 2Gi
+      memoryLimit: 4Gi
       args: ["tail", "-f", "/dev/null"]
       mountSources: true
       endpoints:
@@ -64,3 +66,4 @@ commands:
       component: py-web
       group:
         kind: debug
+```
